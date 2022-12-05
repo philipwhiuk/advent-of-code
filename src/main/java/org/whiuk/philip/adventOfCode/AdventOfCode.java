@@ -1,9 +1,6 @@
 package org.whiuk.philip.adventOfCode;
 
-import org.whiuk.philip.adventOfCode.twentytwentytwo.Four;
-import org.whiuk.philip.adventOfCode.twentytwentytwo.One;
-import org.whiuk.philip.adventOfCode.twentytwentytwo.Three;
-import org.whiuk.philip.adventOfCode.twentytwentytwo.Two;
+import org.whiuk.philip.adventOfCode.twentytwentytwo.*;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -42,6 +39,13 @@ public class AdventOfCode {
                 switch(part) {
                     case "1": Four.partOne(); break;
                     case "2": Four.partTwo(); break;
+                    default: System.out.println("Unsolved/unknown activity");
+                }
+            } else if ("5".equals(day)) {
+                String part = fetchInfo("Part?");
+                switch(part) {
+                    case "1": Five.partOne(); break;
+                    case "2": Five.partTwo(); break;
                     default: System.out.println("Unsolved/unknown activity");
                 }
             } else{
