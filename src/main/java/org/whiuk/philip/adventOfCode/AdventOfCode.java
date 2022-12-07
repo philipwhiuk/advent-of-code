@@ -48,7 +48,14 @@ public class AdventOfCode {
                     case "2": Five.partTwo(); break;
                     default: System.out.println("Unsolved/unknown activity");
                 }
-            } else{
+            } else if ("6".equals(day)) {
+                String part = fetchInfo("Part?");
+                switch(part) {
+                    case "1": Six.partOne(); break;
+                    case "2": Six.partTwo(); break;
+                    default: System.out.println("Unsolved/unknown activity");
+                }
+            }else{
                 System.out.println("Unsolved/unknown activity");
             }
         } else {
